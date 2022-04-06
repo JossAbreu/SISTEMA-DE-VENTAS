@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "SISTEMA DE VENTAS.sln",
+    "projects": [
+      "SISTEMA DE VENTAS\\SISTEMA DE VENTAS.csproj"
+    ]
+  }
+}
