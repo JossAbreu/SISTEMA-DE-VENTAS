@@ -417,7 +417,7 @@ namespace SISTEMA_DE_VENTAS
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form datos_de_cliente = new datos_de_cliente();
+            Form datos_de_cliente = new Clientes();
             datos_de_cliente.ShowDialog();
             this.Close();
         }

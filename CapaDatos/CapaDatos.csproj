@@ -59,7 +59,7 @@
     <Compile Include="AppConexion.cs" />
     <Compile Include="CDCategoria.cs" />
     <Compile Include="CDCompra_Cabeceraclass .cs" />
-    <Compile Include="CDClienteclass.cs" />
+    <Compile Include="CDCliente.cs" />
     <Compile Include="CDCompra_Detalleclass.cs" />
     <Compile Include="CDEmpleadoclass.cs" />
     <Compile Include="CDFacturaclass.cs" />

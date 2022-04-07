@@ -37,12 +37,12 @@ namespace SISTEMA_DE_VENTAS
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BRefrescar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BAnterior = new System.Windows.Forms.Button();
+            this.BSiguiente = new System.Windows.Forms.Button();
+            this.BUltimo = new System.Windows.Forms.Button();
+            this.BPrimero = new System.Windows.Forms.Button();
             this.BBuscar = new System.Windows.Forms.Button();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -151,12 +151,12 @@ namespace SISTEMA_DE_VENTAS
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.BRefrescar);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.button4);
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.BAnterior);
+            this.panel5.Controls.Add(this.BSiguiente);
+            this.panel5.Controls.Add(this.BUltimo);
+            this.panel5.Controls.Add(this.BPrimero);
             this.panel5.Controls.Add(this.BBuscar);
             this.panel5.Controls.Add(this.tbBuscar);
             this.panel5.Location = new System.Drawing.Point(-14, 276);
@@ -164,15 +164,15 @@ namespace SISTEMA_DE_VENTAS
             this.panel5.Size = new System.Drawing.Size(1062, 137);
             this.panel5.TabIndex = 156;
             // 
-            // button5
+            // BRefrescar
             // 
-            this.button5.Location = new System.Drawing.Point(896, 87);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 36);
-            this.button5.TabIndex = 156;
-            this.button5.Text = "Refrescar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            this.BRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("BRefrescar.Image")));
+            this.BRefrescar.Location = new System.Drawing.Point(243, 88);
+            this.BRefrescar.Name = "BRefrescar";
+            this.BRefrescar.Size = new System.Drawing.Size(51, 36);
+            this.BRefrescar.TabIndex = 156;
+            this.BRefrescar.UseVisualStyleBackColor = true;
+            this.BRefrescar.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // label4
             // 
@@ -185,45 +185,45 @@ namespace SISTEMA_DE_VENTAS
             this.label4.Text = "Ingresar Nombre de la Categoria";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button4
+            // BAnterior
             // 
-            this.button4.Location = new System.Drawing.Point(547, 85);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 37);
-            this.button4.TabIndex = 154;
-            this.button4.Text = "Anterior";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.BAnterior.Image = ((System.Drawing.Image)(resources.GetObject("BAnterior.Image")));
+            this.BAnterior.Location = new System.Drawing.Point(80, 87);
+            this.BAnterior.Name = "BAnterior";
+            this.BAnterior.Size = new System.Drawing.Size(50, 38);
+            this.BAnterior.TabIndex = 154;
+            this.BAnterior.UseVisualStyleBackColor = true;
+            this.BAnterior.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // BSiguiente
             // 
-            this.button3.Location = new System.Drawing.Point(381, 86);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 37);
-            this.button3.TabIndex = 153;
-            this.button3.Text = "Siguiente";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.BSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("BSiguiente.Image")));
+            this.BSiguiente.Location = new System.Drawing.Point(136, 87);
+            this.BSiguiente.Name = "BSiguiente";
+            this.BSiguiente.Size = new System.Drawing.Size(50, 38);
+            this.BSiguiente.TabIndex = 153;
+            this.BSiguiente.UseVisualStyleBackColor = true;
+            this.BSiguiente.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // BUltimo
             // 
-            this.button2.Location = new System.Drawing.Point(722, 86);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 36);
-            this.button2.TabIndex = 152;
-            this.button2.Text = "Ultima";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BUltimo.Image = ((System.Drawing.Image)(resources.GetObject("BUltimo.Image")));
+            this.BUltimo.Location = new System.Drawing.Point(192, 88);
+            this.BUltimo.Name = "BUltimo";
+            this.BUltimo.Size = new System.Drawing.Size(45, 37);
+            this.BUltimo.TabIndex = 152;
+            this.BUltimo.UseVisualStyleBackColor = true;
+            this.BUltimo.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // BPrimero
             // 
-            this.button1.Location = new System.Drawing.Point(146, 85);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 37);
-            this.button1.TabIndex = 151;
-            this.button1.Text = "Primero";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BPrimero.Image = ((System.Drawing.Image)(resources.GetObject("BPrimero.Image")));
+            this.BPrimero.Location = new System.Drawing.Point(27, 87);
+            this.BPrimero.Name = "BPrimero";
+            this.BPrimero.Size = new System.Drawing.Size(43, 37);
+            this.BPrimero.TabIndex = 151;
+            this.BPrimero.UseVisualStyleBackColor = true;
+            this.BPrimero.Click += new System.EventHandler(this.button1_Click);
             // 
             // BBuscar
             // 
@@ -272,16 +272,19 @@ namespace SISTEMA_DE_VENTAS
             // 
             // DGVDatos
             // 
-            this.DGVDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGVDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVDatos.Location = new System.Drawing.Point(0, 20);
+            this.DGVDatos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGVDatos.Location = new System.Drawing.Point(0, 0);
             this.DGVDatos.Name = "DGVDatos";
             this.DGVDatos.RowHeadersWidth = 51;
             this.DGVDatos.RowTemplate.Height = 24;
             this.DGVDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVDatos.Size = new System.Drawing.Size(1031, 407);
+            this.DGVDatos.Size = new System.Drawing.Size(1031, 427);
             this.DGVDatos.TabIndex = 0;
+            this.DGVDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVDatos_CellContentClick_1);
+            this.DGVDatos.CurrentCellChanged += new System.EventHandler(this.DGVDatos_CurrentCellChanged_1);
             // 
             // panel2
             // 
@@ -516,13 +519,13 @@ namespace SISTEMA_DE_VENTAS
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BPrimero;
+        private System.Windows.Forms.Button BUltimo;
+        private System.Windows.Forms.Button BAnterior;
+        private System.Windows.Forms.Button BSiguiente;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView DGVDatos;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BRefrescar;
         private System.Windows.Forms.TextBox tbIdCategoria;
         private System.Windows.Forms.Label label5;
     }

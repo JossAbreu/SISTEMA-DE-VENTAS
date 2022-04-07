@@ -122,44 +122,7 @@ namespace CapaDatos
             return mensaje;
         }
 
-        /*public String InsertarrActualizar(CDCateclass objCategoria)
-        {
-
-            String mensaje = "";
-            SqlConnection sqlCon = new SqlConnection();
-
-
-            try
-            {
-
-                sqlCon.ConnectionString = Appconexicion.miconexion;
-                SqlCommand micomando = new SqlCommand(" CategoriaInsertarActualizar", sqlCon);
-                sqlCon.Open();
-                micomando.CommandType = CommandType.StoredProcedure;
-                micomando.Parameters.AddWithValue("@IdCategorias", objCategoria.didCategoria);
-                micomando.Parameters.AddWithValue("@Categoria", objCategoria.dCategoria);
-                micomando.Parameters.AddWithValue("@Estado", objCategoria.dEstado);
-                mensaje = micomando.ExecuteNonQuery() == 1 ? "Actualizacion de datos completada correctamente" :
-                                          "No se pudo Actualizar  correctamente los Datos !";
-
-            }
-
-
-            catch (Exception ex)
-            {
-                mensaje = ex.Message;
-            }
-
-            finally
-            {
-
-                if (sqlCon.State == ConnectionState.Open)
-                    sqlCon.Close();
-            }
-
-            return mensaje;
-        }
-       */
+       
         public DataTable CategoriaConsultar(String CDCateclass)
         {
             DataTable dt = new DataTable(); 

@@ -1,7 +1,7 @@
 ﻿
 namespace SISTEMA_DE_VENTAS
 {
-    partial class datos_de_cliente
+    partial class Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,13 @@ namespace SISTEMA_DE_VENTAS
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(datos_de_cliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.panel3 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbBuscar = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -96,28 +96,28 @@ namespace SISTEMA_DE_VENTAS
             this.toolStripMenuItem21 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
+            this.BEditar = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
+            this.BCancelar = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
+            this.BGuardar = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.BNuevo = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbDireccion = new System.Windows.Forms.TextBox();
+            this.tbTelefono = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tbIdCliente = new System.Windows.Forms.TextBox();
+            this.tbCedula = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
+            this.tbApellido = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -125,10 +125,8 @@ namespace SISTEMA_DE_VENTAS
             this.label7 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.DVGDatos = new System.Windows.Forms.TabPage();
+            this.BBuscar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -136,6 +134,15 @@ namespace SISTEMA_DE_VENTAS
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.BRefrescar = new System.Windows.Forms.Button();
+            this.BAnterior = new System.Windows.Forms.Button();
+            this.BSiguiente = new System.Windows.Forms.Button();
+            this.BUltimo = new System.Windows.Forms.Button();
+            this.BPrimero = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbEstado = new System.Windows.Forms.ComboBox();
+            this.DGVDatos = new System.Windows.Forms.DataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -150,13 +157,13 @@ namespace SISTEMA_DE_VENTAS
             this.panel9.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.DVGDatos.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -232,16 +239,16 @@ namespace SISTEMA_DE_VENTAS
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // textBox8
+            // tbBuscar
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox8.Location = new System.Drawing.Point(16, 22);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(585, 31);
-            this.textBox8.TabIndex = 117;
+            this.tbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBuscar.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.tbBuscar.Location = new System.Drawing.Point(16, 22);
+            this.tbBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.tbBuscar.Multiline = true;
+            this.tbBuscar.Name = "tbBuscar";
+            this.tbBuscar.Size = new System.Drawing.Size(585, 31);
+            this.tbBuscar.TabIndex = 117;
             // 
             // menuStrip1
             // 
@@ -348,7 +355,7 @@ namespace SISTEMA_DE_VENTAS
             this.ventasToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ventasToolStripMenuItem1.Image")));
             this.ventasToolStripMenuItem1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(224, 32);
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(177, 32);
             this.ventasToolStripMenuItem1.Text = "Ventas ";
             // 
             // mantenimientoToolStripMenuItem
@@ -784,93 +791,96 @@ namespace SISTEMA_DE_VENTAS
             // 
             this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel14.Controls.Add(this.button11);
+            this.panel14.Controls.Add(this.BEditar);
             this.panel14.Location = new System.Drawing.Point(1454, 13);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(131, 132);
             this.panel14.TabIndex = 157;
             // 
-            // button11
+            // BEditar
             // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button11.AutoSize = true;
-            this.button11.BackColor = System.Drawing.SystemColors.Window;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button11.Location = new System.Drawing.Point(4, 8);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(123, 48);
-            this.button11.TabIndex = 150;
-            this.button11.Text = "Editar";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button11.UseVisualStyleBackColor = false;
+            this.BEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BEditar.AutoSize = true;
+            this.BEditar.BackColor = System.Drawing.SystemColors.Window;
+            this.BEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BEditar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BEditar.Image = ((System.Drawing.Image)(resources.GetObject("BEditar.Image")));
+            this.BEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BEditar.Location = new System.Drawing.Point(4, 8);
+            this.BEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.BEditar.Name = "BEditar";
+            this.BEditar.Size = new System.Drawing.Size(123, 48);
+            this.BEditar.TabIndex = 150;
+            this.BEditar.Text = "Editar";
+            this.BEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BEditar.UseVisualStyleBackColor = false;
+            this.BEditar.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel18
             // 
             this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel18.Controls.Add(this.button13);
+            this.panel18.Controls.Add(this.BCancelar);
             this.panel18.Location = new System.Drawing.Point(1314, 13);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(131, 132);
             this.panel18.TabIndex = 160;
             // 
-            // button13
+            // BCancelar
             // 
-            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.AutoSize = true;
-            this.button13.BackColor = System.Drawing.SystemColors.Window;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button13.Location = new System.Drawing.Point(4, 8);
-            this.button13.Margin = new System.Windows.Forms.Padding(4);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(123, 48);
-            this.button13.TabIndex = 150;
-            this.button13.Text = "Cancelar";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button13.UseVisualStyleBackColor = false;
+            this.BCancelar.AutoSize = true;
+            this.BCancelar.BackColor = System.Drawing.SystemColors.Window;
+            this.BCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BCancelar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BCancelar.Image")));
+            this.BCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BCancelar.Location = new System.Drawing.Point(4, 8);
+            this.BCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.BCancelar.Name = "BCancelar";
+            this.BCancelar.Size = new System.Drawing.Size(123, 48);
+            this.BCancelar.TabIndex = 150;
+            this.BCancelar.Text = "Cancelar";
+            this.BCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BCancelar.UseVisualStyleBackColor = false;
+            this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
             // 
             // panel17
             // 
             this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel17.Controls.Add(this.button10);
+            this.panel17.Controls.Add(this.BGuardar);
             this.panel17.Location = new System.Drawing.Point(1175, 13);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(131, 132);
             this.panel17.TabIndex = 159;
             // 
-            // button10
+            // BGuardar
             // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.AutoSize = true;
-            this.button10.BackColor = System.Drawing.SystemColors.Window;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.Location = new System.Drawing.Point(4, 8);
-            this.button10.Margin = new System.Windows.Forms.Padding(4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(123, 48);
-            this.button10.TabIndex = 150;
-            this.button10.Text = "Guardar ";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button10.UseVisualStyleBackColor = false;
+            this.BGuardar.AutoSize = true;
+            this.BGuardar.BackColor = System.Drawing.SystemColors.Window;
+            this.BGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BGuardar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BGuardar.Image")));
+            this.BGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BGuardar.Location = new System.Drawing.Point(4, 8);
+            this.BGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.BGuardar.Name = "BGuardar";
+            this.BGuardar.Size = new System.Drawing.Size(123, 48);
+            this.BGuardar.TabIndex = 150;
+            this.BGuardar.Text = "Guardar ";
+            this.BGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BGuardar.UseVisualStyleBackColor = false;
+            this.BGuardar.Click += new System.EventHandler(this.BGuardar_Click);
             // 
             // panel16
             // 
@@ -907,74 +917,77 @@ namespace SISTEMA_DE_VENTAS
             // 
             this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel15.Controls.Add(this.button9);
+            this.panel15.Controls.Add(this.BNuevo);
             this.panel15.Location = new System.Drawing.Point(900, 13);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(131, 132);
             this.panel15.TabIndex = 157;
             // 
-            // button9
+            // BNuevo
             // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.AutoSize = true;
-            this.button9.BackColor = System.Drawing.SystemColors.Window;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(4, 8);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(123, 48);
-            this.button9.TabIndex = 150;
-            this.button9.Text = "Nuevo";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = false;
+            this.BNuevo.AutoSize = true;
+            this.BNuevo.BackColor = System.Drawing.SystemColors.Window;
+            this.BNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BNuevo.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BNuevo.Image = ((System.Drawing.Image)(resources.GetObject("BNuevo.Image")));
+            this.BNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BNuevo.Location = new System.Drawing.Point(4, 8);
+            this.BNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.BNuevo.Name = "BNuevo";
+            this.BNuevo.Size = new System.Drawing.Size(123, 48);
+            this.BNuevo.TabIndex = 150;
+            this.BNuevo.Text = "Nuevo";
+            this.BNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BNuevo.UseVisualStyleBackColor = false;
+            this.BNuevo.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.textBox15);
-            this.panel12.Controls.Add(this.textBox10);
-            this.panel12.Controls.Add(this.textBox12);
+            this.panel12.Controls.Add(this.cbEstado);
+            this.panel12.Controls.Add(this.tbDireccion);
+            this.panel12.Controls.Add(this.tbTelefono);
+            this.panel12.Controls.Add(this.tbEmail);
             this.panel12.Location = new System.Drawing.Point(496, 9);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(398, 136);
             this.panel12.TabIndex = 156;
             // 
-            // textBox15
+            // tbDireccion
             // 
-            this.textBox15.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(7, 17);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(375, 22);
-            this.textBox15.TabIndex = 54;
+            this.tbDireccion.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDireccion.Location = new System.Drawing.Point(7, 17);
+            this.tbDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDireccion.Name = "tbDireccion";
+            this.tbDireccion.Size = new System.Drawing.Size(375, 22);
+            this.tbDireccion.TabIndex = 54;
             // 
-            // textBox10
+            // tbTelefono
             // 
-            this.textBox10.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(7, 79);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(375, 22);
-            this.textBox10.TabIndex = 65;
-            this.textBox10.Text = "***-*******-*";
+            this.tbTelefono.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTelefono.Location = new System.Drawing.Point(7, 79);
+            this.tbTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTelefono.Name = "tbTelefono";
+            this.tbTelefono.Size = new System.Drawing.Size(375, 22);
+            this.tbTelefono.TabIndex = 65;
+            this.tbTelefono.Text = "***-*******-*";
             // 
-            // textBox12
+            // tbEmail
             // 
-            this.textBox12.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(7, 47);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(375, 22);
-            this.textBox12.TabIndex = 57;
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            this.tbEmail.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.Location = new System.Drawing.Point(7, 47);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(375, 22);
+            this.tbEmail.TabIndex = 57;
+            this.tbEmail.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // panel11
             // 
+            this.panel11.Controls.Add(this.label8);
             this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.label4);
             this.panel11.Controls.Add(this.label5);
@@ -1018,51 +1031,51 @@ namespace SISTEMA_DE_VENTAS
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.textBox13);
-            this.panel10.Controls.Add(this.textBox11);
-            this.panel10.Controls.Add(this.textBox9);
-            this.panel10.Controls.Add(this.textBox14);
+            this.panel10.Controls.Add(this.tbIdCliente);
+            this.panel10.Controls.Add(this.tbCedula);
+            this.panel10.Controls.Add(this.tbNombre);
+            this.panel10.Controls.Add(this.tbApellido);
             this.panel10.Location = new System.Drawing.Point(104, 9);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(306, 136);
             this.panel10.TabIndex = 154;
             // 
-            // textBox13
+            // tbIdCliente
             // 
-            this.textBox13.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(6, 12);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(296, 22);
-            this.textBox13.TabIndex = 52;
+            this.tbIdCliente.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbIdCliente.Location = new System.Drawing.Point(6, 12);
+            this.tbIdCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.tbIdCliente.Name = "tbIdCliente";
+            this.tbIdCliente.Size = new System.Drawing.Size(296, 22);
+            this.tbIdCliente.TabIndex = 52;
             // 
-            // textBox11
+            // tbCedula
             // 
-            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(6, 102);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(296, 22);
-            this.textBox11.TabIndex = 64;
-            this.textBox11.Text = "(***) ***-****";
+            this.tbCedula.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCedula.Location = new System.Drawing.Point(6, 102);
+            this.tbCedula.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCedula.Name = "tbCedula";
+            this.tbCedula.Size = new System.Drawing.Size(296, 22);
+            this.tbCedula.TabIndex = 64;
+            this.tbCedula.Text = "(***) ***-****";
             // 
-            // textBox9
+            // tbNombre
             // 
-            this.textBox9.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(6, 42);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(296, 22);
-            this.textBox9.TabIndex = 56;
+            this.tbNombre.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombre.Location = new System.Drawing.Point(6, 42);
+            this.tbNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(296, 22);
+            this.tbNombre.TabIndex = 56;
             // 
-            // textBox14
+            // tbApellido
             // 
-            this.textBox14.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(6, 72);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(296, 22);
-            this.textBox14.TabIndex = 55;
+            this.tbApellido.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbApellido.Location = new System.Drawing.Point(6, 72);
+            this.tbApellido.Margin = new System.Windows.Forms.Padding(4);
+            this.tbApellido.Name = "tbApellido";
+            this.tbApellido.Size = new System.Drawing.Size(296, 22);
+            this.tbApellido.TabIndex = 55;
             // 
             // panel9
             // 
@@ -1123,7 +1136,7 @@ namespace SISTEMA_DE_VENTAS
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.DVGDatos);
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1141,61 +1154,44 @@ namespace SISTEMA_DE_VENTAS
             this.tabPage1.Text = "CLIENTE ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // DVGDatos
             // 
-            this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.panel6);
-            this.tabPage2.Controls.Add(this.textBox8);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1619, 565);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "CLIENTES CREADOS ";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.DVGDatos.Controls.Add(this.panel6);
+            this.DVGDatos.Controls.Add(this.DGVDatos);
+            this.DVGDatos.Controls.Add(this.BRefrescar);
+            this.DVGDatos.Controls.Add(this.BAnterior);
+            this.DVGDatos.Controls.Add(this.BSiguiente);
+            this.DVGDatos.Controls.Add(this.BUltimo);
+            this.DVGDatos.Controls.Add(this.BPrimero);
+            this.DVGDatos.Controls.Add(this.BBuscar);
+            this.DVGDatos.Controls.Add(this.tbBuscar);
+            this.DVGDatos.Location = new System.Drawing.Point(4, 25);
+            this.DVGDatos.Name = "DVGDatos";
+            this.DVGDatos.Padding = new System.Windows.Forms.Padding(3);
+            this.DVGDatos.Size = new System.Drawing.Size(1619, 565);
+            this.DVGDatos.TabIndex = 1;
+            this.DVGDatos.Text = "CLIENTES CREADOS ";
+            this.DVGDatos.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // BBuscar
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button7.AutoSize = true;
-            this.button7.BackColor = System.Drawing.SystemColors.Window;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(621, 12);
-            this.button7.Margin = new System.Windows.Forms.Padding(5, 6, 4, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(117, 41);
-            this.button7.TabIndex = 147;
-            this.button7.Text = "Buscar ";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.AutoSize = true;
-            this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Controls.Add(this.listBox1);
-            this.panel6.Location = new System.Drawing.Point(6, 59);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1520, 568);
-            this.panel6.TabIndex = 148;
-            // 
-            // listBox1
-            // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(10, 12);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1486, 532);
-            this.listBox1.TabIndex = 0;
+            this.BBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BBuscar.AutoSize = true;
+            this.BBuscar.BackColor = System.Drawing.SystemColors.Window;
+            this.BBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BBuscar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BBuscar.Image")));
+            this.BBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BBuscar.Location = new System.Drawing.Point(639, 20);
+            this.BBuscar.Margin = new System.Windows.Forms.Padding(5, 6, 4, 4);
+            this.BBuscar.Name = "BBuscar";
+            this.BBuscar.Size = new System.Drawing.Size(104, 33);
+            this.BBuscar.TabIndex = 147;
+            this.BBuscar.Text = "Buscar ";
+            this.BBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BBuscar.UseVisualStyleBackColor = false;
+            this.BBuscar.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // panel1
             // 
@@ -1282,7 +1278,102 @@ namespace SISTEMA_DE_VENTAS
             this.panel8.Size = new System.Drawing.Size(1656, 620);
             this.panel8.TabIndex = 124;
             // 
-            // datos_de_cliente
+            // BRefrescar
+            // 
+            this.BRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("BRefrescar.Image")));
+            this.BRefrescar.Location = new System.Drawing.Point(1540, 14);
+            this.BRefrescar.Name = "BRefrescar";
+            this.BRefrescar.Size = new System.Drawing.Size(43, 37);
+            this.BRefrescar.TabIndex = 161;
+            this.BRefrescar.UseVisualStyleBackColor = true;
+            this.BRefrescar.Click += new System.EventHandler(this.BRefrescar_Click);
+            // 
+            // BAnterior
+            // 
+            this.BAnterior.Image = ((System.Drawing.Image)(resources.GetObject("BAnterior.Image")));
+            this.BAnterior.Location = new System.Drawing.Point(1377, 13);
+            this.BAnterior.Name = "BAnterior";
+            this.BAnterior.Size = new System.Drawing.Size(43, 37);
+            this.BAnterior.TabIndex = 160;
+            this.BAnterior.UseVisualStyleBackColor = true;
+            this.BAnterior.Click += new System.EventHandler(this.BAnterior_Click);
+            // 
+            // BSiguiente
+            // 
+            this.BSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("BSiguiente.Image")));
+            this.BSiguiente.Location = new System.Drawing.Point(1433, 13);
+            this.BSiguiente.Name = "BSiguiente";
+            this.BSiguiente.Size = new System.Drawing.Size(43, 37);
+            this.BSiguiente.TabIndex = 159;
+            this.BSiguiente.UseVisualStyleBackColor = true;
+            this.BSiguiente.Click += new System.EventHandler(this.BSiguiente_Click);
+            // 
+            // BUltimo
+            // 
+            this.BUltimo.Image = ((System.Drawing.Image)(resources.GetObject("BUltimo.Image")));
+            this.BUltimo.Location = new System.Drawing.Point(1489, 14);
+            this.BUltimo.Name = "BUltimo";
+            this.BUltimo.Size = new System.Drawing.Size(43, 37);
+            this.BUltimo.TabIndex = 158;
+            this.BUltimo.UseVisualStyleBackColor = true;
+            this.BUltimo.Click += new System.EventHandler(this.BUltimo_Click);
+            // 
+            // BPrimero
+            // 
+            this.BPrimero.Image = ((System.Drawing.Image)(resources.GetObject("BPrimero.Image")));
+            this.BPrimero.Location = new System.Drawing.Point(1324, 13);
+            this.BPrimero.Name = "BPrimero";
+            this.BPrimero.Size = new System.Drawing.Size(43, 37);
+            this.BPrimero.TabIndex = 157;
+            this.BPrimero.UseVisualStyleBackColor = true;
+            this.BPrimero.Click += new System.EventHandler(this.BPrimero_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(8, 105);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 16);
+            this.label8.TabIndex = 51;
+            this.label8.Text = "Estado";
+            // 
+            // cbEstado
+            // 
+            this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo",
+            "Suspencion"});
+            this.cbEstado.Location = new System.Drawing.Point(12, 108);
+            this.cbEstado.Name = "cbEstado";
+            this.cbEstado.Size = new System.Drawing.Size(158, 24);
+            this.cbEstado.TabIndex = 66;
+            // 
+            // DGVDatos
+            // 
+            this.DGVDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVDatos.Location = new System.Drawing.Point(0, 79);
+            this.DGVDatos.Name = "DGVDatos";
+            this.DGVDatos.RowHeadersWidth = 51;
+            this.DGVDatos.RowTemplate.Height = 24;
+            this.DGVDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVDatos.Size = new System.Drawing.Size(1626, 431);
+            this.DGVDatos.TabIndex = 0;
+            this.DGVDatos.CurrentCellChanged += new System.EventHandler(this.DGVDatos_CurrentCellChanged);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DimGray;
+            this.panel6.ForeColor = System.Drawing.Color.Silver;
+            this.panel6.Location = new System.Drawing.Point(-27, 60);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1663, 23);
+            this.panel6.TabIndex = 162;
+            // 
+            // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1297,9 +1388,12 @@ namespace SISTEMA_DE_VENTAS
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "datos_de_cliente";
-            this.Text = "datos_de_cliente";
+            this.Name = "Clientes";
+            this.Text = "Datos de Clientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Clientes_FormClosing);
+            this.Load += new System.EventHandler(this.Clientes_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Clientes_KeyDown);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -1325,9 +1419,8 @@ namespace SISTEMA_DE_VENTAS
             this.panel9.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.panel6.ResumeLayout(false);
+            this.DVGDatos.ResumeLayout(false);
+            this.DVGDatos.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -1336,6 +1429,7 @@ namespace SISTEMA_DE_VENTAS
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1347,7 +1441,7 @@ namespace SISTEMA_DE_VENTAS
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
@@ -1408,30 +1502,28 @@ namespace SISTEMA_DE_VENTAS
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem21;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button BGuardar;
+        private System.Windows.Forms.Button BNuevo;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button BEditar;
+        private System.Windows.Forms.Button BCancelar;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbTelefono;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox tbCedula;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox tbIdCliente;
+        private System.Windows.Forms.TextBox tbApellido;
+        private System.Windows.Forms.TextBox tbDireccion;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TabPage DVGDatos;
+        private System.Windows.Forms.Button BBuscar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
@@ -1448,5 +1540,14 @@ namespace SISTEMA_DE_VENTAS
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Button BRefrescar;
+        private System.Windows.Forms.Button BAnterior;
+        private System.Windows.Forms.Button BSiguiente;
+        private System.Windows.Forms.Button BUltimo;
+        private System.Windows.Forms.Button BPrimero;
+        private System.Windows.Forms.ComboBox cbEstado;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView DGVDatos;
+        private System.Windows.Forms.Panel panel6;
     }
 }

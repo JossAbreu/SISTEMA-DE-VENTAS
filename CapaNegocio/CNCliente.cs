@@ -13,22 +13,24 @@ namespace CapaNegocio
    public class CNCliente
     {
         public static string Insertar
-       (int pidCliente,
+       (int pIdCliente,
         string pNombre,
         string pApellido,
         string pDirección,
         string pTeléfono,
         string pCedula,
+       string  pEmail,
        string pEstado)
 
         {
-            CDClienteclass objCliente= new CDClienteclass();
-            objCliente.IdCliente= pidCliente;
+            CDCliente objCliente= new CDCliente();
+            objCliente.IdCliente= pIdCliente;
             objCliente.Nombre = pNombre;
             objCliente.Apellido = pApellido;
             objCliente.Dirección = pDirección;
             objCliente.Teléfono = pTeléfono;
             objCliente.Cedula = pCedula;
+            objCliente.Email = pEmail;
             objCliente.Estado = pEstado;
 
 
@@ -37,22 +39,24 @@ namespace CapaNegocio
         }
 
         public static string Actualizar
-       (int pidCliente,
+       (int pIdCliente,
         string pNombre,
         string pApellido,
         string pDirección,
         string pTeléfono,
         string pCedula,
+        string pEmail,
        string pEstado)
 
         {
-            CDClienteclass objCliente = new CDClienteclass();
-            objCliente.IdCliente = pidCliente;
+            CDCliente objCliente = new CDCliente();
+            objCliente.IdCliente = pIdCliente;
             objCliente.Nombre = pNombre;
             objCliente.Apellido = pApellido;
             objCliente.Dirección = pDirección;
             objCliente.Teléfono = pTeléfono;
             objCliente.Cedula = pCedula;
+            objCliente.Email = pEmail;
             objCliente.Estado = pEstado;
 
 
@@ -60,38 +64,28 @@ namespace CapaNegocio
             return objCliente.Actulizar(objCliente);
         }
 
-        public static string InsertarActualizar(int accion,
-        int pidCliente,
-        string pNombre,
-        string pApellido,
-        string pDirección,
-        string pTeléfono,
-        string pCedula,
-       string pEstado)
 
+        public DataTable ObtenerCliente()
         {
-            CDClienteclass objCliente = new CDClienteclass();
-            objCliente.IdCliente = pidCliente;
-            objCliente.Nombre = pNombre;
-            objCliente.Apellido = pApellido;
-            objCliente.Dirección = pDirección;
-            objCliente.Teléfono = pTeléfono;
-            objCliente.Cedula = pCedula;
-            objCliente.Estado = pEstado;
-
-            return objCliente.InsertarActualizar(objCliente, accion);
-        }
-
-
-        public DataTable ObtenerCliente(string miparametro)
-        {
-            CDClienteclass objSuplidor = new CDClienteclass();
-            DataTable dt = new DataTable();
-
-
-            dt = objSuplidor.ClienteConsultar(miparametro);
+            string msg = "";
+            CDCliente objCliente = new CDCliente(); //creamos un nuevo objeto de la clase suplidor
+            DataTable dt = new DataTable(); //creamos un nuevo DataTable
+            dt = objCliente.ClienteMostrarTodo(); //El DataTable se llena con todos los datos devueltos
             return dt;
-        }
+        } //Fin del método ObtenerSuplidor
+
+
+
+        public DataTable ObtenerClienteConFiltro(int TieneParametro, String Parametro)
+        {
+            string msg = "";
+            CDCliente objCliente = new CDCliente(); //creamos un nuevo objeto suplidor
+            DataTable dt = new DataTable(); //creamos un nuevo DataTable
+            dt = objCliente.ClienteMostrarConFiltro(Parametro); //Llenamos el DataTable
+            return dt; //Retornamos el DataTable con los datos adquiridos
+        }//Fin del método ObtenerSuplidorConFiltro
+
+
 
     }
 }

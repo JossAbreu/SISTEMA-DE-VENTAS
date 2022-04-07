@@ -249,11 +249,11 @@
     <Compile Include="Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
-    <Compile Include="datos de cliente.cs">
+    <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="datos de cliente.Designer.cs">
-      <DependentUpon>datos de cliente.cs</DependentUpon>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Empleado.cs">
       <SubType>Form</SubType>
@@ -393,8 +393,8 @@
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="datos de cliente.resx">
-      <DependentUpon>datos de cliente.cs</DependentUpon>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleado.resx">
       <DependentUpon>Empleado.cs</DependentUpon>

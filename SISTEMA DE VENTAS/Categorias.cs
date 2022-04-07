@@ -395,6 +395,16 @@ namespace SISTEMA_DE_VENTAS
 
         }
 
+        private void DGVDatos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DGVDatos_CurrentCellChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
         //Fin del método Click del botón Buscar
 
 
